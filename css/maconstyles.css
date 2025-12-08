@@ -4,20 +4,56 @@
     font-family: "Syne", sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 h1 {
-    color: blue
+    color: #004040;
+    font-weight: bold;
+}
+
+h2{
+    color: #295F5F;
+}
+
+h3, .h3{
+    color: #3E6767;
+}
+
+a{
+    color: #aa2828;
+}
+
+.btn, .badge{
+    background-color: #171C72;
+    border-color: #171C72;
+    color: #ffff;
+}
+
+.quotes{
+    background-color: #107EA2;
+}
+
+.dropdown-item:focus:hover{
+    color: #ffff;
+    background-color: #aa2828;
 }
 
 .navbar {
-    padding: 0px 0px 8px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .navbar-brand {
-    color: blue;
+    color: #004040;
+}
+
+.navbar-logo{
+    width: 200px;
 }
 
 .nav-item a:hover {
-    color: #0d6efd;
+    color: #aa2828;
 }
 
 .container-fluid {
@@ -27,16 +63,23 @@ h1 {
 /* Nav  End*/
 
 
+/*Headers*/
+
+
+/*Headers End*/
+
+
 /* Hero Tab Start */
 
 .hero-section {
     background-color: #f8f9fa;
-    padding: 5rem 0;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
 }
 
 .hero-title {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: bolder;
     margin-bottom: 1.5rem;
 }
 
@@ -48,8 +91,15 @@ h1 {
 .hero-image {
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    animation: fade-in 2s forwards;
+    animation: fade-in 3s forwards;
 }
+
+
+.deptagenthead{
+    margin-top: 150px;
+}
+
+
 
 @keyframes fade-in {
   from {opacity: 0%;}
@@ -71,7 +121,7 @@ h1 {
 
 
 
-@media (max-width: 767.98px) {
+@media (max-width: 750px) {
     .hero-title {
         font-size: 2.5rem;
     }
@@ -90,8 +140,47 @@ h1 {
 
 /* Main Card Start */
 
+.carousel-item{
+    max-height: 600px;
+}
+
+.card{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card:hover{
+  transition: 0.4s;
+    box-shadow: 0 0.1rem .3rem rgba(0, 0, 0, 0.15);
+}
+
+.accordion-button{
+    font-weight: bolder;
+}
+
+.accordion-button:hover{
+    color:#107EA2;
+}
+
+svg{
+    fill:#004040;
+}
+
+svg:hover{
+    fill: #007c7c;
+    transition: .2s ease-in-out;
+}
+
+/* Main Card End */
+
+/* dividers */
 
 
+.divider{
+ height: 75px;
+ visibility: hidden;
+}
+
+/* dividers end */
 
 
 /* Footer */
